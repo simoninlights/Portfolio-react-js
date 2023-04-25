@@ -1,0 +1,95 @@
+/* Header */
+
+.header {
+    min-height: 100vh;
+    padding: 40px 0;
+    background-color: var(--dark-bg);
+    color: var(--header-text);
+    /* background-image: url(/img/svg/bg-abstract.svg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center center; */
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.header__wrapper {
+    max-width: 660px;
+    padding: 0 15px;
+
+}
+
+.header__title {
+    font-family: 'DM Sans';
+    font-size: 40px;
+}
+
+.header__title strong {
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.header__title em {
+    font-style: normal;
+    color: var(--accent);
+}
+
+.header__text {
+    font-size: 18px;
+    line-height: 1.333;
+    margin-bottom: 40px;
+}
+
+.header__text p+p {
+    margin-top: 0.5em;
+}
+
+.header-bg {
+    position: absolute;
+    top: auto;
+    left: auto;
+}
+
+/*Animation for header background*/
+/* .header-bg .header-svg-abstract {
+  
+    animation: bg-svg-rotation 7s infinite linear;
+}
+
+@keyframes bg-svg-rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(-90deg);
+    }
+} */
+
+/*--------------------------------*/
+
+.btn {
+    display: inline-block;
+    height: 48px;
+    padding: 12px 28px;
+    background-color: var(--accent);
+    border-radius: 5px;
+    color: var(--white);
+    letter-spacing: 0.15px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.btn:hover {
+    opacity: 0.8;
+    transition: opacity .2s ease-in;
+}
+
+/* Click effect for the button */
+.btn:active {
+    position: relative;
+    top: .5px;
+}
